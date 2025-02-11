@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FD8F8F"
+    android:padding="16dp">
+
+    <!-- Título de la pantalla -->
+
+    <!-- Lista de resultados -->
+    <TextView
+        android:id="@+id/tituloResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Resultados"
+        android:textSize="70sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Primer lugar: Ganador -->
+        <TextView
+            android:id="@+id/primerLugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganador #1"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"/>
+
+        <!-- Nombre -->
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[Nombre]"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <!-- Botón Volver a jugar -->
+    <Button
+        android:id="@+id/volverAJugarButton"
+        android:layout_width="205dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF5722"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Volver a Jugar"
+        android:textSize="25dp" />
+</LinearLayout>
